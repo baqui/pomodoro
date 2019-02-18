@@ -1,0 +1,32 @@
+{
+  "name": "pomodoro-node-touchbar",
+  "version": "0.0.1",
+  "description": "pomodoro timer for mac touchbar",
+  "main": "index.js",
+  "author": "Wojciech Bakłażec",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js --mode=development",
+    "run-server": "node ./dist/index.js",
+    "start": "yarn build && yarn run-server"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "base64-inline-loader": "^1.1.1",
+    "express": "^4.16.4",
+    "immutable": "^4.0.0-rc.12",
+    "minimist": "^1.2.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sqlite3": "^4.0.6",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  }
+}

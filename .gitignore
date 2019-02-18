@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.lock-wscript
+.idea
+.vscode
+.DS_Store
+node_modules/
+.directory
+dist/
+server_dist/
+yarn-error.log
+npm-debug.log
+
+test/output/*.png
