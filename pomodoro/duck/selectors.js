@@ -40,3 +40,8 @@ export const getNextSessionParams = state => ({
   round_time: state.settings.round_time,
   time: msToTime(state.settings.round_time)
 });
+
+export const getCurrentState  = state => ({
+  ...state.pomodoro.toJS(),
+  timer: ''
+});

@@ -1,5 +1,6 @@
 import store from './store';
 import { toggle, reset } from './duck/actions';
+import { getCurrentState } from './duck/selectors';
 
 export default class Pomodoro {
 
@@ -12,6 +13,6 @@ export default class Pomodoro {
   }
 
   static state() {
-    return store.getState();
+    return getCurrentState(store.getState());
   }
 }
